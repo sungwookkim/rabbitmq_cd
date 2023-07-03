@@ -1,0 +1,7 @@
+mq:
+  rabbitmq:
+    port: 5674
+    username: admin
+    password: password
+    virtual-host: /
+    host: localhost

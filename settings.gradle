@@ -1,0 +1,4 @@
+rootProject.name = 'rabbitmq-cd'
+include 'publisher'
+include 'consumer'
+

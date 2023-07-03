@@ -1,0 +1,28 @@
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:mq_conn
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create
+
+mq:
+  rabbitmq:
+      blue:
+        port: 5674
+        username: admin
+        password: password
+        virtual-host: /
+        host: localhost
+      green:
+          port: 5675
+          username: admin
+          password: password
+          virtual-host: /
+          host: localhost

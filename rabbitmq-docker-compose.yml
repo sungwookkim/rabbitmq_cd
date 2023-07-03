@@ -1,0 +1,18 @@
+version: '3'
+services:
+  rabbitmq_blue:
+    image: rabbitmq:3.8.34-management
+    ports:
+      - 5674:5672
+      - 15673:15672
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=password	  
+  rabbitmq_green:
+    image: rabbitmq:3.8.34-management
+    ports:
+      - 5675:5672
+      - 15674:15672
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=password

@@ -1,0 +1,1 @@
+insert into mq_info values('blue');
